@@ -1,2 +1,46 @@
+@font-face {
+  font-family: "Gorillaz";
+  font-display: swap;
+  src: local("Custom Font"),
+    url("../assets/fonts/gorillaz_1.woff2") format("woff2"),
+    url("../assets/fonts/gorillaz_1.woff") format("woff"),
+    url("../assets/fonts/gorillaz_1.otf") format("opentype");
+}
+
+figure {
+  width: 400px;
+  height: 400px;
+}
+
+.home-page, .trackshow-page {
+  background: linear-gradient(120deg, #00d1b2, #ffffff);
+}
+
+.trackshow-page {
+  background-image: url("https://preview.redd.it/ufq2moe3zhz11.png?width=2024&format=png&auto=webp&s=74460feb542c2e3861cfc11a2213cf9cc3ab2b3b")
+}
+
+.gorillaz-logo {
+  max-height: 400px;
+  max-width: 600px;
+}
+
+span {
+  font-family: 'Gorillaz';
+  font-size: 30px;
+}
+
+.rotate {
+  animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
 
 @import '~bulma/bulma.sass'

@@ -1,13 +1,13 @@
-import React from 'react'
+// import React from 'react'
 
-function Header() {
-  return (
-    <section className="hero is-primary">
-      <div className="container">
-        <h2 className="title is-1 has-text-centered">Header</h2>
-      </div>
-    </section>
-  )
-}
+// function Header() {
+//   return (
+//     <section className="hero is-primary">
+//       <div className="container">
+//         <h1>Header</h1>
+//       </div>
+//     </section>
+//   )
+// }
 
-export default Header
+// export default Header
