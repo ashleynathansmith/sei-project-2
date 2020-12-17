@@ -6,34 +6,67 @@
     url("../assets/fonts/gorillaz_1.woff") format("woff"),
     url("../assets/fonts/gorillaz_1.otf") format("opentype");
 }
-
 figure {
   width: 400px;
   height: 400px;
 }
-
 .home-page, .trackshow-page {
   background: linear-gradient(120deg, #00d1b2, #ffffff);
 }
-
 .trackshow-page {
   background-image: url("https://preview.redd.it/ufq2moe3zhz11.png?width=2024&format=png&auto=webp&s=74460feb542c2e3861cfc11a2213cf9cc3ab2b3b")
 }
-
-.gorillaz-logo {
+.audio-player {
+  background-color: white;
+}
+.gorillaz-trackshow-logo {
   max-height: 400px;
   max-width: 600px;
 }
-
 span {
   font-family: 'Gorillaz';
   font-size: 30px;
 }
-
+.img-container {
+  margin: auto;
+  max-width: 400px;
+  width: 400px;
+  height: 400px;
+}
+.track-album-text {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+.next-track {
+  background-color: white;
+}
+button {
+  border: none;
+  background-color: #7afffb;
+  color: #EF5A96;
+  padding: 10px;
+  border-radius: 15px;
+  border: 5px solid #000000;
+  box-shadow: 0px 0px 5px 5px #000000;
+  outline: none;
+}
+button:hover {
+  border: none;
+  background-color: white;
+  color: #37ECE5;
+  padding: 10px;
+  border-radius: 15px;
+  border: 5px solid #EF5A96;
+  box-shadow: 0px 0px 5px 5px #EF5A96;
+  cursor: pointer;
+  outline: none;
+}
+// ASH CODE FRIDAY MORNING
 .rotate {
   animation: rotation 8s infinite linear;
+  border: 5px solid white;
 }
-
 @keyframes rotation {
   from {
     transform: rotate(0deg);
@@ -42,5 +75,121 @@ span {
     transform: rotate(359deg);
   }
 }
-
+// RICKY NEW CODE SINCE 10PM 
+main {
+  height: 100vh;
+}
+// GORILLAZ LOGO
+.gorillaz-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gorillaz-logo {
+  margin: 90px;
+}
+.gorillaz-logo img {
+  width: 800px;
+}
+.enter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 90px;
+  animation: shake 1.5s infinite;
+}
+// BAND IMAGES STYLING:
+.band-images-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+.characterOne img {
+  height: 420px;
+  position: absolute;
+  right: 5%;
+  bottom: 0;
+  opacity: 1;
+  animation: fade 1.5s linear;
+}
+.characterTwo img {
+  height: 320px;
+  position: absolute;
+  right: 50%;
+  bottom: 0;
+  opacity: 1;
+  animation: fade 2.5s linear;
+}
+.murdocImage img {
+  height: 520px;
+  position: absolute;
+  left: 2%;
+  bottom: 0;
+  opacity: 1;
+  animation: fade 2s linear;
+}
+// Loading page:
+.generating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.band-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  padding: 60px 0 10px;
+}
+.band-image-container img {
+  height: 600px;
+  opacity: 1;
+  animation: fadeInOut 6.5s linear;
+}
+.jeep img {
+  height: 400px;
+  position: absolute;
+  top: 35%;
+  opacity: 1;
+  animation: drive 6.5s linear;
+}
+// Welcome text: 
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+}
+@keyframes fade {
+  0% { opacity: 0 }
+  100% { opacity: 1 }
+}
+@keyframes drive {
+  0% { left: -40% }
+  80% { left: 0% }
+  100% { left: 100% }
+}
+@keyframes fadeInOut {
+  0% { opacity: 0.3 }
+  10% { opacity: 1 }
+  20% { opacity: 0.4 }
+  30% { opacity: 1 }
+  40% { opacity: 0.4 }
+  50% { opacity: 1 }
+  60% { opacity: 0.4 }
+  70% { opacity: 1 }
+  80% { opacity: 0.2 }
+  100% { opacity: 0 }
+}
+@keyframes fadeIn {
+  0% { opacity: 0}
+  90% { opacity: 0 }
+  95% { opacity: 1 }
+  100% { opacity: 1 }
+}
+@keyframes shake {
+  0% {transform: translate(0px, 0px);}
+  50% {transform: translate(0px, 8px);}
+  100% {transform: translate(0px, 0px);}
+}
 @import '~bulma/bulma.sass'
